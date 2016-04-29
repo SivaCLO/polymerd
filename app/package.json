@@ -1,7 +1,7 @@
 {
-  "name": "polymerized-electron",
-  "productName": "Polymerized Electron",
-  "description": "Boilerplate to build rich cross-platform desktop apps with reusable web components using Electron & Polymer.",
+  "name": "polymerd",
+  "productName": "Polymer Desktop",
+  "description": "Boilerplate to build rich cross-platform desktop apps with Polymer",
   "version": "0.1.0",
   "author": "SivRagav",
   "copyright": "© 2016, SivRagav",
@@ -12,7 +12,7 @@
   "packageNameTemplate": "{{name}}-v{{version}}-{{platform}}-{{arch}}",
   "osx": {
     "build": "1",
-    "identifier": "com.sivragav.polymerized-electron",
+    "identifier": "com.sivragav.polymerd",
     "LSApplicationCategoryType": "public.app-category.productivity",
     "//codeSignIdentitiy": {
       "dmg": "Developer ID Application: Company Name (APPIDENTITY)",
