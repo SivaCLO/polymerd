@@ -1,34 +1,47 @@
-electron-boilerplate
-==============
-Comprehensive boilerplate application for [Electron runtime](http://electron.atom.io).  
+## Polymerized Electron
 
-Scope of this project:
+> Boilerplate to build rich cross-platform desktop apps with reusable web components using Electron & Polymer.
 
-- Provide basic structure of the application so you can much easier grasp what should go where.
-- Give you cross-platform development environment, which works the same way on OSX, Windows and Linux.
-- Generate ready for distribution installers of your app for all three operating systems.
+### Built from
 
-Not in the scope:
+* https://github.com/szwacz/electron-boilerplate - Comprehensive boilerplate application for [Electron runtime](http://electron.atom.io).  
+* https://github.com/PolymerElements/polymer-starter-kit - A starting point for building web applications with [Polymer 1.0](https://www.polymer-project.org/1.0/).
 
-- Imposing on you any framework (e.g. Angular, React). You can integrate the one which makes most sense for you.
+### Included out of the box
 
-# Quick start
-The only development dependency of this project is [Node.js](https://nodejs.org). So just make sure you have it installed.
-Then type few commands known to every Node developer...
+* Basic structure of a desktop application built with web components
+* Cross-platform development environment, which works the same way on OSX, Windows and Linux.
+* Native Installers for all three operating systems.
+* [Polymer](https://www.polymer-project.org/), [Paper](https://elements.polymer-project.org/browse?package=paper-elements), [Iron](https://elements.polymer-project.org/browse?package=iron-elements) and [Neon](https://elements.polymer-project.org/browse?package=neon-elements) elements
+* [Material Design](http://www.google.com/design/spec/material-design/introduction.html) layout
+* Routing with [Page.js](https://visionmedia.github.io/page.js/)
+* Unit testing with [Web Component Tester](https://github.com/Polymer/web-component-tester)
+* Optional offline setup through [Platinum](https://elements.polymer-project.org/browse?package=platinum-elements) Service Worker elements
+* End-to-end Build Tooling (including [Vulcanize](https://github.com/Polymer/vulcanize))
+* [Recipes](/docs/README.md/) for ES2015 support, Polymer performance, using Chrome Dev Editor, Deploying to GitHub Pages, Deploying to Firebase, Mobile Chrome Apps and lint tools.
+
+### More Information
+
+* Check out the Polymer Starter Kit tutorials on [polymer-project.org](https://www.polymer-project.org):
+
+# Start Here
 ```
-git clone https://github.com/szwacz/electron-boilerplate.git
-cd electron-boilerplate
+git clone https://github.com/sivragav/polymerized-electron.git
+cd polymerized-electron
 npm install
 npm start
 ```
-... and boom! You have running desktop application on your screen.
 
-# Structure of the project
+-----------------------------
+
+# Original Documentation from szwacz/electron-boilerplate
+
+## Structure of the project
 
 There are **two** `package.json` files:  
 
 #### 1. For development
-Sits on path: `electron-boilerplate/package.json`. Here you declare dependencies for your development environment and build scripts. **This file is not distributed with real application!**
+Sits on path: `polymerized-electron/package.json`. Here you declare dependencies for your development environment and build scripts. **This file is not distributed with real application!**
 
 Also here you declare the version of Electron runtime you want to use:
 ```json
@@ -38,7 +51,7 @@ Also here you declare the version of Electron runtime you want to use:
 ```
 
 #### 2. For your application
-Sits on path: `electron-boilerplate/app/package.json`. This is **real** manifest of your application. Declare your app dependencies here.
+Sits on path: `polymerized-electron/app/package.json`. This is **real** manifest of your application. Declare your app dependencies here.
 
 #### OMG, but seriously why there are two `package.json`?
 1. Native npm modules (those written in C, not JavaScript) need to be compiled, and here we have two different compilation targets for them. Those used in application need to be compiled against electron runtime, and all `devDependencies` need to be compiled against your locally installed node.js. Thanks to having two files this is trivial.
@@ -46,7 +59,7 @@ Sits on path: `electron-boilerplate/app/package.json`. This is **real** manifest
 
 ### Project's folders
 
-- `app` - code of your application goes here.
+- `app` - includes polymer-starter-kit
 - `config` - place where you can declare environment specific stuff for your app.
 - `build` - in this folder lands built, runnable application.
 - `releases` - ready for distribution installers will land here.
@@ -118,7 +131,7 @@ var paths = {
 
 #### Unit tests
 
-electron-boilerplate has preconfigured [mocha](https://mochajs.org/) test runner with the [chai](http://chaijs.com/api/assert/) assertion library. To run the tests go with standard:
+This project has preconfigured [mocha](https://mochajs.org/) test runner with the [chai](http://chaijs.com/api/assert/) assertion library. To run the tests go with standard:
 ```
 npm test
 ```
@@ -194,8 +207,6 @@ There are still a lot of 32-bit Windows installations in use. If you want to sup
 # License
 
 The MIT License (MIT)
-
-Copyright (c) 2015-2016 Jakub Szwacz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
