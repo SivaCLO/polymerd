@@ -1,11 +1,11 @@
-## Polymerized Electron
+## Polymer Desktop (polymerd)
 
-> Boilerplate to build rich cross-platform desktop apps with reusable web components using Electron & Polymer.
+> Boilerplate to build rich cross-platform desktop apps with Polymer.
 
 ### Built from
 
-* https://github.com/szwacz/electron-boilerplate - Comprehensive boilerplate application for [Electron runtime](http://electron.atom.io).  
 * https://github.com/PolymerElements/polymer-starter-kit - A starting point for building web applications with [Polymer 1.0](https://www.polymer-project.org/1.0/).
+* https://github.com/szwacz/electron-boilerplate - Comprehensive boilerplate application for [Electron runtime](http://electron.atom.io).  
 
 ### Included out of the box
 
@@ -24,10 +24,10 @@
 
 * Check out the Polymer Starter Kit tutorials on [polymer-project.org](https://www.polymer-project.org):
 
-# Start Here
+### Start Here
 ```
-git clone https://github.com/sivragav/polymerized-electron.git
-cd polymerized-electron
+git clone https://github.com/polymerd/polymerd.git
+cd polymerd
 npm install
 npm start
 ```
@@ -41,7 +41,7 @@ npm start
 There are **two** `package.json` files:  
 
 #### 1. For development
-Sits on path: `polymerized-electron/package.json`. Here you declare dependencies for your development environment and build scripts. **This file is not distributed with real application!**
+Sits on path: `polymerd/package.json`. Here you declare dependencies for your development environment and build scripts. **This file is not distributed with real application!**
 
 Also here you declare the version of Electron runtime you want to use:
 ```json
@@ -51,7 +51,7 @@ Also here you declare the version of Electron runtime you want to use:
 ```
 
 #### 2. For your application
-Sits on path: `polymerized-electron/app/package.json`. This is **real** manifest of your application. Declare your app dependencies here.
+Sits on path: `polymerd/app/package.json`. This is **real** manifest of your application. Declare your app dependencies here.
 
 #### OMG, but seriously why there are two `package.json`?
 1. Native npm modules (those written in C, not JavaScript) need to be compiled, and here we have two different compilation targets for them. Those used in application need to be compiled against electron runtime, and all `devDependencies` need to be compiled against your locally installed node.js. Thanks to having two files this is trivial.
