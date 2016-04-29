@@ -34,7 +34,7 @@ npm start
 
 -----------------------------
 
-# Original Documentation from szwacz/electron-boilerplate
+> Original Documentation from szwacz/electron-boilerplate
 
 ## Structure of the project
 
