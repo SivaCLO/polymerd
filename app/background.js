@@ -30,7 +30,7 @@ app.on('ready', function () {
         height: 600
     });
 
-    mainWindow.loadURL('file://' + __dirname + '/app.html');
+    mainWindow.loadURL('file://' + __dirname + '/index.html#!/');
 
     if (env.name !== 'production') {
         mainWindow.openDevTools();
