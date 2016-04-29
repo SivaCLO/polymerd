@@ -1,7 +1,7 @@
 {
   "name": "polymerd",
   "productName": "Polymer Desktop",
-  "description": "Boilerplate to build rich cross-platform desktop apps with Polymer",
+  "description": "Boilerplate to build rich cross-platform desktop apps with Polymer & Electron",
   "version": "0.1.0",
   "author": "SivRagav",
   "copyright": "© 2016, SivRagav",
