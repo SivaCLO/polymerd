@@ -4,7 +4,7 @@
 
 ### Built from
 
-* https://github.com/PolymerElements/polymer-starter-kit - A starting point for building web applications with [Polymer 1.0](https://www.polymer-project.org/1.0/).
+* https://github.com/PolymerElements/polymer-starter-kit - A starting point for building web applications with [Polymer](https://www.polymer-project.org/1.0/).
 * https://github.com/szwacz/electron-boilerplate - Comprehensive boilerplate application for [Electron runtime](http://electron.atom.io).  
 
 ### Included out of the box
