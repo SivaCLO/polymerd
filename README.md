@@ -1,3 +1,4 @@
+![](polymerd-logo.svg)
 ## Polymer Desktop (polymerd)
 
 > Boilerplate to build rich cross-platform desktop apps with Polymer.
